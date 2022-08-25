@@ -1,7 +1,7 @@
-let choices = ["Guu", "Choki", "Paa"] // камень, ножницы, бумага
-let result = ""
+const choices = ["Guu", "Choki", "Paa"] // камень, ножницы, бумага
 const botChoiceEl = document.getElementById("bot-choice")
 const playerChoiceEl = document.getElementById("player-choice")
+let result = ""
 
 bot = {
     choice: "None",
@@ -99,13 +99,13 @@ function gameResult() {
         botChoiceEl.src = "images/draw.png"
     }
 
-    let playerWins = document.getElementById("player-wins")
-    let botWins = document.getElementById("bot-wins")
+    const playerWins = document.getElementById("player-wins")
+    const botWins = document.getElementById("bot-wins")
     playerWins.textContent = "Wins: " + player.wins 
     botWins.textContent = "Wins: " + bot.wins
     
     if (player.wins === 10) {
-        let takina = document.body
+        const takina = document.body
         takina.innerHTML = "<video width='1280' height='720' autoplay><source src='videos/WinSong.mp4' type='video/mp4'></video>"
         takina.style.padding = '98px'
     }
