@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janken</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1 id="game">TAKINA: THE GAME</h1>
+    <div id="bot">
+        <p id="opponent">Janken bot's choice</p>
+        <img id="bot-choice" src="" alt="bot's choice">
+        <p id="bot-wins">Wins: 0</p>
+    </div>
+    <button id="play" onclick="jankenBot()">PLAY</button>
+    <div id="player" class="player-block">
+        <p id="you">Make your choice</p>
+        <button onclick="guuChoice()">Guu</button>
+        <button onclick="chokiChoice()">Choki</button>
+        <button onclick="paaChoice()">Paa</button>
+        <img id="player-choice" src="" alt="player's choice">
+        <p id="player-wins">Wins: 0</p>
+    </div>
+</body>
+</html>
